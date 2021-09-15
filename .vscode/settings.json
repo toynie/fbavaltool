@@ -1,0 +1,5 @@
+{
+    "sync.autoDownload": true,
+    "sync.forceDownload": true,
+    "sync.forceUpload": true
+}

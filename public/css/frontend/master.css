@@ -1,0 +1,250 @@
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+#footer-logo > img {
+    max-width: 180px;
+}
+.body{
+}
+
+.jumbotron  {
+    background: -webkit-linear-gradient(340deg, #182b62 30%, #393ba3 100%);
+    background: -o-linear-gradient(340deg, #182b62 30%, #393ba3 100%);
+    background: linear-gradient(110deg, #182b62 30%, #393ba3 100%);
+    position: relative;
+}
+
+.answer .answer-multi-letter {
+    border-right:  solid #182b62 !important;
+    background-color: #5bd1a1;
+    width: 300px;
+}
+
+.answer-multi-text:hover{
+    background: #ededed;
+}
+
+.card-body {
+    border:3px solid #182b62;
+}
+
+.answer-yesno{
+    border-style: solid;
+    border-color: #5bd1a1;
+}
+
+.answer-val , #questions-body div  select{
+    border-radius: 0;
+    border: 1px solid #182b62;
+}
+
+.caret{border-top:4px solid red;}
+@yield('custom-style');
+
+
+input .btn .btn-outline-success .btn-lg .btn-block .btnyesno{
+    border-radius: 0 !important;
+    border: 3px solid transparent !important;
+}
+
+
+.blueback-radient{
+    background: linear-gradient(110deg, #182b62 30%, #393ba3 100%);
+    color: white;
+}
+
+.blueback{
+    /* background-color: #182b62; */
+    color: white;
+}
+.speedometer{
+
+}
+
+
+.dfbThickBorder{
+    border-width: thick !important;
+}
+.dfbMediumBorder{
+    border-width: medium !important;
+}
+
+.dfbPriceCard-child-left, .dfbPriceCard-child-right {
+    max-width: 33%;
+    width: 33%;
+}
+
+.dfbSelectAnser .dfbSelectAnser-left{
+    max-height: 50px;
+}
+
+.dfbSelectAnser .custom-radio .custom-control-label::before {
+    visibility: hidden;
+}
+
+#dfb-frontend-header-bg {
+    /* background-image: url(/img/banner_calc.png), url(/img/dfb-frontend-header-bg.png); */
+    /* background-image: url(), url(/img/dfb-frontend-header-bg.png); */
+    /* background-image:url(/img/dfb-frontend-header-bg.png);
+    background-size:contain,cover;
+    background-position: 70% bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+    margin-left: 100px,; */
+    background-image: url(/img/dfb-frontend-header-bg.png); */
+    background-image: url("/w3images/photographer.jpg");
+    background-color: #cccccc;
+    /* height: ; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+hr.header-hr{
+    border-top: 3px solid #5bd0a0;
+
+}
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 567px) {
+    #dfb-frontend-header-bg  h1{
+    font-size:5rem; line-height:4rem
+    }
+    #dfb-frontend-header-bg  h3{
+        font-size:3rem; line-height:3rem
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #dfb-frontend-header-bg  h1{
+        font-size:4rem; line-height:4rem
+    }
+    #dfb-frontend-header-bg  h3{
+        font-size:2.5rem; line-height:2.5rem
+    }
+    /* #dfb-frontend-header-bg  h2{ */
+    h2{
+        font-family:helveticaRound;
+        font-size: 4rem; line-height: 4rem;
+    }
+}
+
+#footer-email{
+    background-image: url("https://dealflowbrokerage.com/wp-content/themes/dealflow/dist/images/subscribe-bg.png");
+    background-color: #182b62;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #dfb-frontend-header-bg  h1{
+        font-size:4rem; line-height:4rem;
+    }
+    #dfb-frontend-header-bg  h2{
+        font-size: 3rem; line-height: 3rem;
+    }
+    #dfb-frontend-header-bg  h3{
+        font-size:3rem; line-height:3rem
+    }
+    #dfb-frontend-header-bg  h4{
+        font-size:2rem; line-height:2rem
+    }
+
+    .tofadeinscroll{
+        /* border: 1em solid #fff;
+        border-bottom: 4em solid #fff;
+        border-radius: .25em;
+        box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+        margin: 2em auto; */
+        opacity: 0;
+        /* transform: translateY(4em) rotateZ(-5deg); */
+        transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                    opacity .8s .85s ease-out;
+        max-width: 600px;
+        /* width: 90%; */
+        will-change: transform, opacity;
+    }
+
+    .tofadeinscroll.is-visible {
+        /* opacity: 1; */
+        /* transform: rotateZ(-2deg); */
+    }
+
+    header {
+    opacity: 0;
+    transition: opacity .5s .25s ease-out;
+    }
+
+    header.is-visible {
+    opacity: 1;
+    }
+
+    .main-photo {
+    transform: scale(.8);
+    }
+
+    .heading {
+    transform: translate(-50%, calc(-50% + 1em));
+    }
+
+    .is-visible .main-photo {
+    transform: none;
+    }
+
+    .is-visible .heading {
+    transform: translate(-50%, -50%);
+    }
+
+    .main-photo,.heading {
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                filter 10s 2s ease-out;
+    will-change: transform;
+    }
+}
+
+#footer-continue .btn-outline-primary{
+    border-color: #182b62;
+    border-width: 2px;
+    border-radius: 0px;
+}
+
+#footer-continue .btn-secondary{
+    border-color: none;
+    background-color: Gainsboro;
+    border-width: 2px;
+}
+
+/* #dfb-frontend-header-bg  h1{ */
+    h1,h2,h3,h4,h5{
+    font-family:helveticaRound !important;
+}
+
+#dfb-frontend-header-bg  h2{
+    font-family:helveticaRound;
+}
+
+html {
+scroll-behavior: smooth;
+}
+.tooltip.top .tooltip-arrow {
+    border-top-color: #182b62 !important;
+}
